@@ -1,0 +1,143 @@
+/* src/pages/AuthPage.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('img/imagemfundo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 6px;
+  width: 365px; /* Aumentado em 5% */
+  height: 525px; /* Aumentado em 5% */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 11px; /* Aumentado em 5% */
+  box-shadow: 0 0 21px 0 lightblue; /* Aumentado em 5% */
+}
+
+form {
+  position: absolute;
+  margin-top: 95px; /* Aumentado em 5% */
+  transition: .5s;
+  width: 315px; /* Aumentado em 5% */
+  height: auto; /* Ajustado para se adaptar ao conteúdo */
+}
+
+.buttonsForm {
+  margin-top: 42px; /* Aumentado em 5% */
+  position: relative;
+  border-radius: 31px; /* Aumentado em 5% */
+  box-shadow: 0 0 10px 0 deepskyblue; /* Aumentado em 5% */
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 30px; /* Ajustado para manter proporção */
+}
+
+.btnColor {
+  position: absolute;
+  width: 126px; /* Aumentado em 5% */
+  height: 100%;
+  background: linear-gradient(to right, #4a90e2, #50c9c3);
+  border-radius: 31px; /* Aumentado em 5% */
+  transition: .4s;
+}
+
+.inputGroup {
+  position: relative;
+  margin-top: 28px; /* Aumentado em 5% */
+}
+
+.inputGroup input {
+  border: none;
+  border-radius: 63px; /* Aumentado em 5% */
+  padding: 8px 0 8px 36px; /* Ajustado para manter proporção */
+  outline: none;
+  width: 100%;
+}
+
+.inputGroup i {
+  position: absolute;
+  left: 11px; /* Aumentado em 5% */
+  top: 54%; /* Aumentado em 5% */
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 19px; /* Mantido */
+}
+
+#signin .inputGroup {
+  margin-top: 28px; /* Aumentado em 5% */
+}
+
+#signin .inputGroup.email i {
+  top: 21px; /* Aumentado em 5% */
+}
+
+#signin .inputGroup.password i {
+  top: 100px; /* Aumentado em 5% */
+}
+
+#signup .inputGroup.email i {
+  top: 21px; /* Aumentado em 5% */
+}
+
+#signup .inputGroup.password i {
+  top: 100px; /* Aumentado em 5% */
+}
+
+#signup .inputGroup.password2 i {
+  top: 177px; /* Aumentado em 5% */
+}
+
+#signup .inputGroup.name i {
+  top: 21px; /* Aumentado em 5% */
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: white;
+  border-radius: 31px; /* Aumentado em 5% */
+  width: 100%; /* Mantido */
+  border: none;
+  outline: none;
+  padding: 9px 0; /* Ajustado para manter proporção */
+  font-size: 16px; /* Mantido */
+  margin-top: 29px; /* Aumentado em 5% */
+  cursor: pointer;
+}
+
+.divCheck {
+  margin: 7px 0 0 12px; /* Mantido */
+  width: 85%; /* Aumentado em 5% */
+  font-size: 14px; /* Mantido */
+  display: flex;
+  align-items: center; /* Alinha verticalmente o checkbox e o texto */
+}
+
+.divCheck input[type="checkbox"] {
+  margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
+  margin-top: 2px; /* Ajusta a posição vertical do checkbox */
+}
