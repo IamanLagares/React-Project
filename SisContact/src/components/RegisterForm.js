@@ -4,7 +4,7 @@ import { AuthContext } from '../context/AuthContext';
 import styles from '../pages/AuthPage.module.css';
 
 function RegisterForm() {
-  const [name, setName] = useState(''); // Novo estado para o nome
+  const [name, setName] = useState(''); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -12,7 +12,7 @@ function RegisterForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    register(name, email, password, confirmPassword); // Incluindo o nome na chamada de registro
+    register(name, email, password, confirmPassword); 
   };
 
   return (

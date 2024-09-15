@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import LoginForm from '../components/LoginForm';
 import RegisterForm from '../components/RegisterForm';
-import styles from './AuthPage.module.css'; // Importação correta do CSS
+import styles from './AuthPage.module.css'; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function AuthPage() {

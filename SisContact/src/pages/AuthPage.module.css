@@ -23,30 +23,30 @@ body {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(12px);
   padding: 6px;
-  width: 365px; /* Aumentado em 5% */
-  height: 525px; /* Aumentado em 5% */
+  width: 365px; 
+  height: 525px; 
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   overflow: hidden;
-  border-radius: 11px; /* Aumentado em 5% */
-  box-shadow: 0 0 21px 0 lightblue; /* Aumentado em 5% */
+  border-radius: 11px; 
+  box-shadow: 0 0 21px 0 lightblue; 
 }
 
 form {
   position: absolute;
-  margin-top: 95px; /* Aumentado em 5% */
+  margin-top: 95px; 
   transition: .5s;
-  width: 315px; /* Aumentado em 5% */
-  height: auto; /* Ajustado para se adaptar ao conteúdo */
+  width: 315px; 
+  height: auto; 
 }
 
 .buttonsForm {
-  margin-top: 42px; /* Aumentado em 5% */
+  margin-top: 42px; 
   position: relative;
-  border-radius: 31px; /* Aumentado em 5% */
-  box-shadow: 0 0 10px 0 deepskyblue; /* Aumentado em 5% */
+  border-radius: 31px; 
+  box-shadow: 0 0 10px 0 deepskyblue; 
 }
 
 .buttonsForm button {
@@ -54,87 +54,87 @@ form {
   background: transparent;
   border: none;
   position: relative;
-  padding: 10px 30px; /* Ajustado para manter proporção */
+  padding: 10px 30px; 
 }
 
 .btnColor {
   position: absolute;
-  width: 126px; /* Aumentado em 5% */
+  width: 126px; 
   height: 100%;
   background: linear-gradient(to right, #4a90e2, #50c9c3);
-  border-radius: 31px; /* Aumentado em 5% */
+  border-radius: 31px; 
   transition: .4s;
 }
 
 .inputGroup {
   position: relative;
-  margin-top: 28px; /* Aumentado em 5% */
+  margin-top: 28px; 
 }
 
 .inputGroup input {
   border: none;
-  border-radius: 63px; /* Aumentado em 5% */
-  padding: 8px 0 8px 36px; /* Ajustado para manter proporção */
+  border-radius: 63px; 
+  padding: 8px 0 8px 36px; 
   outline: none;
   width: 100%;
 }
 
 .inputGroup i {
   position: absolute;
-  left: 11px; /* Aumentado em 5% */
-  top: 54%; /* Aumentado em 5% */
+  left: 11px; 
+  top: 54%; 
   transform: translateY(-50%);
   color: #007bff;
-  font-size: 19px; /* Mantido */
+  font-size: 19px; 
 }
 
 #signin .inputGroup {
-  margin-top: 28px; /* Aumentado em 5% */
+  margin-top: 28px; 
 }
 
 #signin .inputGroup.email i {
-  top: 21px; /* Aumentado em 5% */
+  top: 21px; 
 }
 
 #signin .inputGroup.password i {
-  top: 100px; /* Aumentado em 5% */
+  top: 100px; 
 }
 
 #signup .inputGroup.email i {
-  top: 21px; /* Aumentado em 5% */
+  top: 21px; 
 }
 
 #signup .inputGroup.password i {
-  top: 100px; /* Aumentado em 5% */
+  top: 100px; 
 }
 
 #signup .inputGroup.password2 i {
-  top: 177px; /* Aumentado em 5% */
+  top: 177px; 
 }
 
 #signup .inputGroup.name i {
-  top: 21px; /* Aumentado em 5% */
+  top: 21px; 
 }
 
 button[type="submit"] {
   background: #007bff;
   color: white;
-  border-radius: 31px; /* Aumentado em 5% */
-  width: 100%; /* Mantido */
+  border-radius: 31px; 
+  width: 100%; 
   border: none;
   outline: none;
-  padding: 9px 0; /* Ajustado para manter proporção */
-  font-size: 16px; /* Mantido */
-  margin-top: 29px; /* Aumentado em 5% */
+  padding: 9px 0; 
+  font-size: 16px; 
+  margin-top: 29px; 
   cursor: pointer;
 }
 
 .divCheck {
-  margin: 7px 0 0 12px; /* Mantido */
-  width: 85%; /* Aumentado em 5% */
-  font-size: 14px; /* Mantido */
+  margin: 7px 0 0 12px; 
+  width: 85%; 
+  font-size: 14px; 
   display: flex;
-  align-items: center; /* Alinha verticalmente o checkbox e o texto */
+  align-items: center; 
 }
 
 .divCheck input[type="checkbox"] {
