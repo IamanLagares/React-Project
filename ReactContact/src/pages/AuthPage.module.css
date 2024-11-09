@@ -1,4 +1,4 @@
-/* src/pages/AuthPage.module.css */
+/* AuthPage.module.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
 
@@ -9,7 +9,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+.loginBody { /* Classe específica para a página de login */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -88,31 +88,31 @@ form {
   font-size: 19px; 
 }
 
-#signin .inputGroup {
+.loginBody #signin .inputGroup {
   margin-top: 28px; 
 }
 
-#signin .inputGroup.email i {
+.loginBody #signin .inputGroup.email i {
   top: 21px; 
 }
 
-#signin .inputGroup.password i {
+.loginBody #signin .inputGroup.password i {
   top: 100px; 
 }
 
-#signup .inputGroup.email i {
+.loginBody #signup .inputGroup.email i {
   top: 21px; 
 }
 
-#signup .inputGroup.password i {
+.loginBody #signup .inputGroup.password i {
   top: 100px; 
 }
 
-#signup .inputGroup.password2 i {
+.loginBody #signup .inputGroup.password2 i {
   top: 177px; 
 }
 
-#signup .inputGroup.name i {
+.loginBody #signup .inputGroup.name i {
   top: 21px; 
 }
 
@@ -134,10 +134,10 @@ button[type="submit"] {
   width: 85%; 
   font-size: 14px; 
   display: flex;
-  align-items: center; 
+  align-items: center; /* Alinha verticalmente o checkbox e o texto */
 }
 
 .divCheck input[type="checkbox"] {
   margin-right: 5px; /* Espaçamento entre o checkbox e o texto */
-  margin-top: 2px; /* Ajusta a posição vertical do checkbox */
+  margin-top: 2px; 
 }

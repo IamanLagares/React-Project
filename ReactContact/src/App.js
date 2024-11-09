@@ -8,7 +8,7 @@ import ContactsPage from './pages/ContactsPage'; // Página de contatos
 
 function App() {
   useEffect(() => {
-    // Adiciona dados ao localStorage 
+    //Dados ao localStorage 
     localStorage.setItem('user', JSON.stringify({ email: 'teste@teste.com', password: '123456' }));
   }, []);
 
