@@ -219,60 +219,97 @@ tbody tr td.acao {
 }
 
 /* Estilos do modal */
-.modal-container {
-  width: 100vw;
-  height: 100vh;
+/* ContactsPage.module.css */
+/* Estilos do modal */
+/* ContactsPage.module.css */
+.modalContainer {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 999;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start; /* Alinha o modal no topo */
   justify-content: center;
+  padding-top: 50px; /* Espaçamento do topo */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  z-index: 1000; /* Garante que o modal estará acima dos outros elementos */
 }
 
 .modal {
+  position: relative;
+  background-color: rgba(52, 152, 219, 0.8);
+  padding: 400px; /* Mantido o padding do modal em 350px */
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px; /* Reduzido de 20px para 15px */
-  background-color: white;
-  border-radius: 8px; /* Raio da borda */
-  width: 40%; /* Largura do modal */
+  border: 1px solid black;
+}
+
+.modalFormContainer {
+  position: absolute; /* Permite que o formulário se mova acima do padding do modal */
+  top: -80px; /* Ajustado para mover o formulário mais para cima */
+  width: 98%; /* Diminuído o tamanho do formulário */
+  padding: 0 45px; /* Padding interno para o formulário */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
 }
 
 .modal label {
-  font-size: 13px; /* Reduzido de 15px para 13px */
-  width: 100%;
+  font-size: 13px;
+  margin-bottom: 5px; /* Espaço entre o label e o campo */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-weight: bold; /* Torna o texto em negrito */
 }
 
 .modal input,
-.modal textarea {
-  width: calc(100% - 20px); /* Largura dos campos */
+.modal textarea,
+.modal select {
+  width: calc(224% - 10px);
   outline: none;
-  padding: 4px 8px; /* Padding dos campos */
-  margin-bottom: 12px; /* Ajuste para menos espaço inferior */
+  padding: 8px;
+  margin-bottom: 12px;
   border: none;
-  border-bottom: 1px solid #ccc; /* Somente a borda inferior */
+  border-bottom: 1px solid #ccc; /* Apenas borda inferior */
   font-family: 'Poppins', sans-serif;
-  font-size: 14px; /* Reduzido para ajustar a fonte dos campos */
+  font-size: 14px;
+  border-radius: 6px;
 }
 
 .modal textarea {
   resize: none;
-  font-size: 14px; /* Mantido o tamanho reduzido da fonte para o textarea */
+  height: 80px; /* Define uma altura para o textarea */
 }
 
 .modal button {
-  width: 100%;
-  margin: 10px auto;
-  padding: 8px; /* Padding do botão */
+  width: 45%; /* Divide o espaço entre os botões */
+  margin: 10px 1%;
+  padding: 8px;
   border: none;
   background-color: rgb(57, 57, 226);
   color: white;
-  border-radius: 4px; /* Raio da borda do botão */
-  font-size: 14px; /* Reduzido para um tamanho menor */
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.modal button:hover {
+  background-color: rgb(47, 47, 200); /* Efeito de hover no botão */
+}
+
+.modal button:last-of-type {
+  background-color: rgb(57, 57, 226);/* Cor diferenciada para o botão "Cancelar" */
+}
+
+.modal button:last-of-type:hover {
+  background-color: rgb(47, 47, 200);/* Efeito de hover para o botão "Cancelar" */
 }
 
 

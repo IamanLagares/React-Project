@@ -186,51 +186,54 @@ const ContactsPage = () => {
       </div>
 
       {modalActive && (
-        <div className={`${styles.modalContainer} ${styles.active}`}>
-          <div className={styles.modal}>
-            <form onSubmit={handleSubmit}>
-              <label htmlFor="m-nome">Nome</label>
-              <input id="m-nome" name="nome" type="text" value={formData.nome} onChange={handleInputChange} required />
+    <div className={`${styles.modalContainer} ${styles.active}`}>
+        <div className={styles.modal}>
+            <div className={styles.modalFormContainer}> 
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="m-nome">Nome</label>
+                    <input id="m-nome" name="nome" type="text" value={formData.nome} onChange={handleInputChange} required />
 
-              <label htmlFor="m-idade">Idade</label>
-              <input id="m-idade" name="idade" type="number" value={formData.idade} onChange={handleInputChange} />
+                    <label htmlFor="m-idade">Idade</label>
+                    <input id="m-idade" name="idade" type="number" value={formData.idade} onChange={handleInputChange} />
 
-              <label htmlFor="m-cpf">CPF</label>
-              <input id="m-cpf" name="cpf" type="text" value={formData.cpf} onChange={handleInputChange} />
+                    <label htmlFor="m-cpf">CPF</label>
+                    <input id="m-cpf" name="cpf" type="text" value={formData.cpf} onChange={handleInputChange} />
 
-              <label htmlFor="m-telefone">Telefone</label>
-              <input id="m-telefone" name="telefone" type="text" value={formData.telefone} onChange={handleInputChange} required />
+                    <label htmlFor="m-telefone">Telefone</label>
+                    <input id="m-telefone" name="telefone" type="text" value={formData.telefone} onChange={handleInputChange} required />
 
-              <label htmlFor="m-email">E-mail</label>
-              <input id="m-email" name="email" type="email" value={formData.email} onChange={handleInputChange} required />
+                    <label htmlFor="m-email">E-mail</label>
+                    <input id="m-email" name="email" type="email" value={formData.email} onChange={handleInputChange} required />
 
-              <label htmlFor="m-endereco">Endereço</label>
-              <input id="m-endereco" name="endereco" type="text" value={formData.endereco} onChange={handleInputChange} />
+                    <label htmlFor="m-endereco">Endereço</label>
+                    <input id="m-endereco" name="endereco" type="text" value={formData.endereco} onChange={handleInputChange} />
 
-              <label htmlFor="m-rede-social">Redes Sociais</label>
-              <input id="m-rede-social" name="redesSociais" type="text" value={formData.redesSociais} onChange={handleInputChange} />
+                    <label htmlFor="m-rede-social">Redes Sociais</label>
+                    <input id="m-rede-social" name="redesSociais" type="text" value={formData.redesSociais} onChange={handleInputChange} />
 
-              <label htmlFor="m-observacao">Observação</label>
-              <textarea id="m-observacao" name="observacao" value={formData.observacao} onChange={handleInputChange}></textarea>
+                    <label htmlFor="m-observacao">Observação</label>
+                    <textarea id="m-observacao" name="observacao" value={formData.observacao} onChange={handleInputChange}></textarea>
 
-              <label htmlFor="m-categoria">Categoria</label>
-              <select id="m-categoria" name="categoria" value={formData.categoria} onChange={handleInputChange}>
-                <option value="Amigos">Amigos</option>
-                <option value="Família">Família</option>
-                <option value="Clientes">Clientes</option>
-                <option value="Favoritos">Favoritos</option>
-              </select>
+                    <label htmlFor="m-categoria">Categoria</label>
+                    <select id="m-categoria" name="categoria" value={formData.categoria} onChange={handleInputChange}>
+                        <option value="Amigos">Amigos</option>
+                        <option value="Família">Família</option>
+                        <option value="Clientes">Clientes</option>
+                        <option value="Favoritos">Favoritos</option>
+                    </select>
 
-              <button type="submit">Salvar</button>
-              <button type="button" onClick={closeModal}>Cancelar</button>
-            </form>
-          </div>
+                    <button type="submit">Salvar</button>
+                    <button type="button" onClick={closeModal}>Cancelar</button>
+                </form>
+            </div>
         </div>
-      )}
+    </div>
+)}
 
-      <footer>
-      <button className={styles.addContactBtn} onClick={() => openModal()}>Adicionar</button>
-      </footer>
+<footer>
+    <button className={styles.addContactBtn} onClick={() => openModal()}>Adicionar</button>
+</footer>
+
     </div>
   );
 };
